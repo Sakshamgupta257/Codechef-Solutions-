@@ -1,0 +1,36 @@
+Problem Code: MISSP | Name: Chef and Dolls | Difficulty: 1012
+
+--solution--
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int T;
+	cin>>T;
+	while(T--)
+	{
+	    long int N;
+	    cin >> N;
+	    int arr[N];
+	    for(int i=0;i<N;i++){
+	        cin >> arr[i];
+	    }
+	    for(int i=0;i<N;i++)
+	    {
+	        for(int j=i+1;j<N;j++)
+	        {
+	            if(arr[i]==arr[j])
+	            arr[i]=arr[j]=-1;
+	        }
+	    }
+	    for(int i=0;i<N;i++){
+	        if(arr[i]>0){
+	            cout << arr[i] << endl;
+	        }
+	    }
+	    
+	}
+	
+	return 0;
+}
