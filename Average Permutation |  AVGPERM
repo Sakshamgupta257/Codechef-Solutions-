@@ -1,0 +1,30 @@
+Problem Code: AVGPERM | Name: Average Permutation | Difficulty: 1401
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+	cin>>t;
+	while(t-- > 0){
+	    int n; 
+	    cin>>n;
+	    int arr[n], l=0, r=n-1, i=n, t=n;
+	    while(l<=r){
+	        if(l==r){
+	            arr[l]=n;
+	        }else{
+	            arr[l]=n;
+	            arr[r]=n-1;
+	            n -=2;
+	        }
+            l++;
+            r--;
+	    }
+	    for(int j=0; j<t;j++){
+	        cout<<arr[j]<<" ";
+	    }
+	    cout<<endl;
+	}
+	return 0;
+}
