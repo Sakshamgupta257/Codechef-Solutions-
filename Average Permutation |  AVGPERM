@@ -1,5 +1,7 @@
 Problem Code: AVGPERM | Name: Average Permutation | Difficulty: 1401
 
+--solution--
+
 #include <iostream>
 using namespace std;
 
